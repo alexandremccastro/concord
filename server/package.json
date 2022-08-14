@@ -1,0 +1,21 @@
+{
+  "name": "concord-api",
+  "version": "1.0.0",
+  "description": "Concord API",
+  "main": "index.ts",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "http": "^0.0.1-security",
+    "socket.io": "^4.5.1",
+    "ts-node": "^10.9.1",
+    "types": "^0.1.1",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "dev": "ts-node index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.3"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "watch": true,
+    "outDir": "./dist/"
+  }
+}

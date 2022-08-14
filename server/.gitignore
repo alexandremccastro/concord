@@ -1,0 +1,8 @@
+node_modules
+/dist
+
+# To no include
+*.env*
+
+# Except
+!.env.example
