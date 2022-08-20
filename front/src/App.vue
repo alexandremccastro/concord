@@ -1,7 +1,7 @@
 
 <template>
-  <img alt="Vue logo" class="" src="./assets/logo.png">
-  <div class="flex justify-center text-center">
+
+  <div class="flex justify-center font-sans items-center h-screen bg-gray-100">
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
   </div>
 </template>
