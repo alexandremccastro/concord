@@ -9,6 +9,7 @@ const routes: Array<IRoute> = [
   {
     name: 'Login',
     path: '/',
+    redirect: '/login',
     meta: {
       requiresAuth: false,
     },
