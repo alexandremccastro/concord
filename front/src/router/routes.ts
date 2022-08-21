@@ -4,10 +4,11 @@ import Center from "@/views/app/Center.vue";
 import Register from "@/views/auth/Register.vue";
 import ResetPassword from "@/views/auth/password/ResetPassword.vue";
 import RequestReset from "@/views/auth/password/RequestReset.vue";
+import Error404 from '@/views/errors/Error404.vue';
+
 
 const routes: Array<IRoute> = [
   {
-    name: 'Login',
     path: '/',
     redirect: '/login',
     meta: {
@@ -51,6 +52,25 @@ const routes: Array<IRoute> = [
         },
         component: ResetPassword
       },
+    ]
+  },
+  {
+    path: '/',
+    meta: {
+      requiresAuth: false,
+    },
+    component: Center,
+    children: [
+      {
+        name: 'NotFound',
+        children: [],
+        path: '/:pathMatch(.*)*',
+        meta: {
+          title: 'Not Found',
+          requiresAuth: false
+        },
+        component: Error404
+      }
     ]
   }
 ]

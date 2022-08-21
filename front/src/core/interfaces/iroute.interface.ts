@@ -3,6 +3,6 @@ export interface IRoute {
   path: string
   redirect?: any
   meta?: Record<string, unknown>
-  component: any,
+  component: any
   children: any[]
 }
